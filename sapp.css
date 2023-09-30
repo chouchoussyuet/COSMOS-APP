@@ -1,0 +1,309 @@
+#input{
+    background-color : rgba(99, 93, 93, 0.712);
+    color : rgba(221, 214, 214, 0.733);
+    font-family :'Times New Roman', Times, serif;
+    padding: 3px 3px 3px 3px;
+    border: none;
+    outline :none;
+    border-radius: 12px;
+    width: 100%; 
+    height: 35px;
+  }
+
+  .first{
+    margin-top : 15px;
+    margin-bottom :60px;
+  }
+
+ /* Đặt kích thước tối đa cho hình ảnh logo */
+.logo {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Để căn chỉnh ảnh logo vào góc */
+#name {
+    display: flex;
+    align-items: center;
+}
+
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("image/body.png");
+}
+
+.search-bar {
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    height : 37px;
+    margin-top : 17px;
+    color : rgb(170, 167, 167);
+}
+
+.search-icons {
+    display: flex;
+    margin-top : 17px;
+    font-size: 20px;
+}
+
+.search-icons i {
+    font-size: 50px;
+    margin-left: 10px; /* Khoảng cách giữa các biểu tượng */
+    cursor: pointer;
+    margin-top : 17px;
+}
+
+
+
+/* Ô trong thanh bên trái */
+.sidebar-item {
+    margin-top :30px;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Hiệu ứng màu nền */
+    position: relative; /* Để tạo không gian cho biểu tượng "+" */
+}
+
+/* Hiệu ứng hover cho ô */
+.sidebar-item:hover {
+    background-color: #d0cece;
+}
+
+/* Biểu tượng "+" trong hình tròn nhỏ */
+.sidebar-item i {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #007bff; /* Màu nền của hình tròn */
+    color: #474545; /* Màu chữ trong hình tròn */
+    border-radius: 50%; /* Để tạo hình tròn */
+    padding: 5px;
+}
+
+/* Nội dung chính */
+.main-content {
+    margin-left: 320px; /* Để tạo không gian để hiển thị thanh bên trái */
+    padding: 20px;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+/* Định dạng cho ô menu và ô nơi bán */
+.menu, .locations {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu li, .locations li {
+    margin-bottom: 10px;
+}
+
+/* Liên kết cho các ô */
+.sidebar-item a {
+    text-decoration: none;
+    color: #383737;
+}
+
+/* Hiệu ứng "Xem thêm" */
+.locations li.hide {
+    display: none;
+}
+
+.see-more-button {
+    cursor: pointer;
+    color: #007bff;
+    display: flex;
+    align-items: center;
+}
+
+.see-more-button span {
+    margin-left: 5px;
+    transition: transform 0.3s; /* Hiệu ứng xoay biểu tượng "+" */
+}
+
+.locations.expanded li.hide {
+    display: block;
+}
+
+/* Hiệu ứng khi biểu tượng "+" được xoay */
+.see-more-button.expanded span {
+    transform: rotate(180deg);
+}
+
+/* Định dạng chữ không phải liên kết */
+.non-link-text {
+    text-decoration: none; /* Loại bỏ gạch chân */
+    color: rgb(255, 255, 255); /* Đổi màu chữ (ví dụ: màu đen) */
+    margin-bottom : 60px;
+    text-align : center;
+    font-weight: normal; /* Loại bỏ in đậm */
+    background-color: #5e3e3e;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+.post-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.post {
+    background-color: #fff;
+    /* Màu nền của ô */
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    /* Đổ bóng cho ô */
+    margin-bottom: 20px;
+    /* Khoảng cách giữa các ô */
+}
+
+.post-content {
+    padding: 20px;
+}
+
+.post-image {
+    max-width: 100%;
+    /* Giới hạn kích thước tối đa của ảnh theo chiều rộng của ô post */
+    height: auto;
+    /* Đảm bảo tỷ lệ khung hình không bị biến đổi */
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.username {
+    font-weight: bold;
+}
+
+.activity-time {
+    color: #888;
+    margin:0px 48px 10px;
+}
+
+.buy-button {
+    background-color: #5e3e3e;
+    color: #fff;
+    padding: 10px 20px;
+    margin-bottom : 10px;
+    margin-top : 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.buy-button:hover {
+    background-color: #0056b3;
+}
+
+/* CSS cho địa điểm và số điện thoại */
+.location-info, .contact-info {
+margin-top: 10px; /* Khoảng cách giữa các phần tử */
+}
+
+.location-info i, .contact-info i {
+margin-right: 5px; /* Khoảng cách giữa biểu tượng và nội dung */
+}
+
+#wow{
+    font-weight: bold;
+    font-size : 33px;
+    color: rgb(56, 51, 51);
+}
+
+#gia {
+    font-weight: bold;
+    font-size : 18px;
+    color: rgb(117, 107, 107);
+    font-style : italic;
+}
+
+/* CSS cho phần bên phải "Nổi bật" */
+.highlight {
+    position: fixed;
+    top: 100px;
+    /* Khoảng cách từ trên xuống */
+    right: 20px;
+    /* Khoảng cách từ phải sang */
+    width: 300px;
+    /* Độ rộng của phần "Nổi bật" */
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+.highlight h2 {
+    font-size: 20px;
+    margin: 5px 10px 10px;
+}
+
+/* CSS cho từng bài viết nổi bật */
+.highlight-post {
+    margin: 10px 0px 5px;
+    display: flex;
+    align-items: center;
+}
+
+/* Đặt kích thước hình vuông cho ảnh trong phần "Nổi bật" */
+.highlight-image img {
+    width: 100px;
+    /* Độ rộng của ảnh */
+    height: 100px;
+    /* Chiều cao của ảnh */
+    border-radius: 10px;
+    /* Độ bo góc cho ảnh (tạo thành hình vuông) */
+    margin-right: 20px;
+    /* Khoảng cách giữa ảnh và văn bản */
+}
+
+
+.highlight-content {
+    /* Điều chỉnh kiểu dáng và kiểu căn giữa nội dung bài viết */
+    flex: 1;
+    font-size: 18px;
+}
+
+/* CSS cho nội dung bài viết nổi bật */
+.highlight-content h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.highlight-content p {
+    font-size: 14px;
+    color: #888;
+}
+
+.fixed-button {
+    position: fixed; /* Đặt vị trí nút là cố định */
+    bottom: 20px; /* Đặt vị trí dưới cùng */
+    right: 35px; /* Đặt vị trí ở góc phải */
+    background: url('image/map1.png'); /* Đặt hình nền là ảnh 'map.png' */
+    width: 100px; /* Đặt kích thước của nút */
+    height: 100px; /* Đặt kích thước của nút */
+    cursor: pointer; /* Đổi con trỏ thành kiểu bấm được */
+    background-size: cover;
+}

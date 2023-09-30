@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel = "stylesheet" href = "sapp.css">
+    <title>Document</title>
+</head>
+<body>
+        <div class = "bg-image"> 
+            <div class = "container"> 
+
+                <!-- Thanh đầu tiên -->
+                <div class = "row first">
+                    <div class = "col-md-3" id = "name"> <img class = "logo" src = "image/logo.png">  </div>
+                        <input class = "col-md-8 search-bar" type="text" placeholder="&#128269 Nhập từ khóa để tìm kiếm " required >
+                        <div class="col-md-1 search-icons">
+                            <i></i> &#x1F6D2 
+                            <i></i> &#x1F464
+                        </div>
+                </div>
+
+                <div class = "row"> 
+                    <!-- Thanh bên trái -->
+                    <div class = "col-md-3">
+                                    
+                                    <a href = "up/up.html"> 
+                                        <button class="non-link-text"> &#8853 Tạo bài đăng </button>
+                                       
+                                     </a>
+
+                                    <div class="sidebar-item">
+                                        <a href="#"> <h1>Menu</h1> </a>
+                                        <ul class="menu">
+                                            <li><a href="#">&#x2630 Tất cả bài đăng</a></li>
+                                            <li><a href="#">&#x1F465 Bài viết của tôi</a></li>
+                                            <li> <a href = "#">&#x238E Đã mua</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="sidebar-item">
+                                        <a href="#"><h1>Nơi bán</h1></a>
+                                        <ul class="locations">
+                                            <li><a href="#"> &#x1F7DA Hà Nội</a></li>
+                                            <li><a href="#"> &#x1F7DA Hải Phòng</a></li>
+                                            <li><a href="#"> &#x1F7DA Ninh Bình</a></li>
+                                            <li><a href="#"> &#x1F7DA Nam Định</a></li>
+
+                                            <li><a class="see-more-button" href="#">Xem thêm <span>+</span></a></li>
+                                            <li class="hide"><a href="#">&#x1F7DA Địa điểm A</a></li>
+                                            <li class="hide"><a href="#"> &#x1F7DA Địa điểm B</a></li>
+                                            <li class="hide"><a href="#"> &#x1F7DA Địa điểm C</a></li>
+                                        </ul>
+                                    </div>
+                    </div>
+
+                    <!-- Bài đăng ở giữa-->
+                    <div class = "col-md-6"> 
+                            <!-- Danh sách 10 bài viết -->
+                            <div class="post-container">
+                                <div class="post">
+                                    <div class="post-content">
+                                        <div class="user-info">
+                                            <img src="image/avt1.png" alt="Ảnh đại diện" class="avatar">
+                                            <span class="username">Nguyễn Ngọc Anh</span>
+                                        </div>
+                                        <p class="activity-time"> 5 minutes ago</p>
+                                        <h id = "wow"> BÃ CÀ PHÊ HỮU CƠ </h>
+                                        <br>
+                                        <h id = "gia"> Chỉ 50 000 VNĐ </h>
+                                        <div class="location-info">
+                                            <i class="fas fa-map-marker-alt"></i>
+                                            <span class="location"> &#9906 Hà Nội</span>
+                                        </div>
+                                        <div class="contact-info">
+                                            <i class="fas fa-phone"> &#9743 </i>
+                                            <a href="tel:0123456789"> 0123 456 789</a>
+                                        </div>
+                                        <br>
+                                        <p>  &#10084 500gr Bã cà phê hữu cơ sạch mịn, trắng sáng tức thì. </p>
+                                        <p>🌿 Khác với bột cafe fin truyền thống, cà phê hữu cơ KHÔNG LÀM RÁT DA. </p>
+                                        <p> 🍃 CÁCH DÙNG HIỆU QUẢ
+
+                                            1. Tẩy tbc toàn thân (1-3 lần/ tuần) xoa đều hỗn hợp lên cơ thể. Đặc biệt ở những vùng da: Đầu gối, gót chân, khuỷa tay, bàn tay bàn chân....) thì xoa kĩ. Còn lại chỉ cần massage nhẹ nhàng 3p. Thích trắng thì 15-30p ngồi chơi trong nhà tắm.
+                                            
+                                            Riêng đối với mặt: Thoa nhẹ nhàng 30s là đủ. Tắm xong thì rửa toàn thân luôn 1 thể cho tiện. </p>
+                                        <img src="image/ba.png" alt="Hình ảnh bài viết 1" class="post-image">
+                                        <button class="buy-button" onclick="redirectToPaymentPage()">Mua ngay</button>
+                                    </div>
+                                </div>
+
+                                <div class="post-container">
+                                    <div class="post">
+                                        <div class="post-content">
+                                            <div class="user-info">
+                                                <img src="image/demo.jpg" alt="Ảnh đại diện" class="avatar">
+                                                <span class="username">Tiệm Xinh</span>
+                                            </div>
+                                            <p class="activity-time"> 5 minutes ago</p>
+                                            <h id = "wow"> LY TÁI CHẾ TỪ BÃ CÀ PHÊ </h>
+                                            <br>
+                                            <h id = "gia"> 120 000 VNĐ </h>
+                                            <div class="location-info">
+                                                <i class="fas fa-map-marker-alt"></i>
+                                                <span class="location"> &#9906 Nam Định</span>
+                                            </div>
+                                            <div class="contact-info">
+                                                <i class="fas fa-phone"> &#9743 </i>
+                                                <a href="tel:0123456789"> 013 426 189</a>
+                                            </div>
+                                            <br>
+                                            <p>  &#10084 500gr TÁI SINH TỪ ĐẤT, TINH HOA TỪ GAIA CAFE. </p>
+                                            <p>Nhằm lan tỏa lối sống xanh thông qua những việc làm đơn giản hàng ngày, Gaia vừa cho ra mắt LY LÀM TỪ BÃ CÀ PHÊ với mong muốn giảm thiểu tối đa lượng rác thải trong quá trình sản xuất. </p>
+                            
+                                            <img src="image/ba3.jpg" alt="Hình ảnh bài viết 1" class="post-image">
+                                            <button class="buy-button" onclick="redirectToPaymentPage()">Mua ngay</button>
+                                        </div>
+                                    </div>
+    
+
+                                <div class="post">
+                                    <div class="post-content">
+                                        <div class="user-info">
+                                            <img src="image/image1.jpg" alt="Ảnh đại diện" class="avatar">
+                                            <span class="username">CAFE giá rẻ</span>
+                                        </div>
+                                        <p class="activity-time"> 5 minutes ago</p>
+                                        <h id = "wow"> SỈ 5KG CÀ PHÊ KHÔ </h>
+                                        <br>
+                                        <h id = "gia"> Giá sốc 180 000 VNĐ </h>
+                                        <div class="location-info">
+                                            <i class="fas fa-map-marker-alt"></i>
+                                            <span class="location"> &#9906 Hà Nội</span>
+                                        </div>
+                                        <div class="contact-info">
+                                            <i class="fas fa-phone"> &#9743 </i>
+                                            <a href="tel:0834608081"> 0834 60 80 81</a>
+                                        </div>
+                                        <br>
+                                        <p>  &#10084 KHÁCH MUA SĨ : 10kg phí ship 3.0.k  để lại tn giúp mình qua zalo 0834 .60 .80 .81 </p>
+                                        <p>Theo ước tính của Viện Công nghệ Hoàng gia Đại học Melbourne (Úc), mỗi ngày có khoảng gần 6 triệu tấn bã cà phê được đổ vào bãi rác. </p>
+                                        <p> Hy vọng trong thời gian không xa, sẽ có một hệ thống thiết bị công nghệ chế biến hoàn hảo hơn để tận dụng hết đầy đủ kho báu mà hạt cà phê mang đến cho con người. </p>
+
+                                        <p>    1. Chất tẩy rửa tự nhiên -
+                                            Trong bã cà phê có chứa than hoạt tính có thể hấp thụ nhiều bụi bẩn nhỏ, giúp bạn có thể loại bỏ các vết bẩn cứng đầu trên bộ đồ ăn, trộn bã cà phê vào sữa rửa tay có thể giúp khử trùng và ô nhiễm tốt hơn.
+                                        </p>   
+                                        <p>
+                                            2. Chất khử mùi tự nhiên - 
+                                            Dùng bã cà phê cho vào 1 chiếc lọ/bát/hộp nhỏ để vào phòng tắm, sẽ khử mùi nhanh và hiệu quả. Hoặc có thể cho bã cà phê vào túi vải, cho vào tủ giày hoặc cho vào giày, không những giúp giày thơm hơn mà có thể loại bỏ ẩm mốc, khử mùi hôi giày hiệu quả rõ rệt.
+                                        </p>   
+                                        <p>
+                                            3. Chất bột cọ tẩy tự nhiên - 
+                                            Nếu bạn yêu thích làm đẹp thì gần như đã nghe đến công dụng làm đẹp từ bã cà phê. Bã cà phê có thể thúc đẩy quá trình trao đổi chất béo và làm giảm chất béo dư thừa dưới da. Trộn bã cà phê và các loại tinh dầu trên da, và có tác dụng làm mềm mịn dạ, loại bỏ chất nhờn trên da, làm căng da và sạch thoáng lỗ chân lông.
+                                            
+                                            Ở các vùng dễ dàng tích lũy mỡ như đùi, bụng, cánh tay, hông, mát xa cơ thể với bã cà phê cũng có thể làm giảm số đo. Bạn có thể trộn bã cà phê trong một xà phòng hoặc sữa tắm thay cho bọt biển hoặc miếng đá kỳ dùng khi tắm, giúp làm sạch các lỗ chân lông và tẩy da chết, có thể làm cho làn da mịn hơn.
+                        
+                
+                                        <img src="image/ba2.jpg" alt="Hình ảnh bài viết 1" class="post-image">
+                                        <button class="buy-button" onclick="redirectToPaymentPage()">Mua ngay</button>
+                                    </div>
+                                </div>
+
+                                <div class="post">
+                                    <div class="post-content">
+                                        <h2>Bài viết 3</h2>
+                                        <p>Đây là nội dung của bài viết 3.</p>
+                                    </div>
+                                </div>
+                                <div class="post">
+                                    <div class="post-content">
+                                        <h2>Bài viết 4</h2>
+                                        <p>Đây là nội dung của bài viết 4.</p>
+                                    </div>
+                                </div>
+                                <div class="post">
+                                    <div class="post-content">
+                                        <h2>Bài viết 5</h2>
+                                        <p>Đây là nội dung của bài viết 5.</p>
+                                    </div>
+                                </div>
+                                <div class="post">
+                                    <div class="post-content">
+                                        <h2>Bài viết 6</h2>
+                                        <p>Đây là nội dung của bài viết 6.</p>
+                                    </div>
+                                </div>
+                                <div class="post">
+                                    <div class="post-content">
+                                        <h2>Bài viết 7</h2>
+                                        <p>Đây là nội dung của bài viết 7.</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                    </div>
+                </div>
+
+                <div class = "col-md-3"> 
+
+                            <!-- Thanh bên phải -->
+                            <div class="highlight">
+                                    <h2>Bài viết nổi bật</h2>
+
+                                    <!-- Con moe thu 1-->
+                                    <div class="highlight-post">
+                                        <div class="highlight-image">
+                                            <a href="https://yody.vn/tai-che-ba-ca-phe">
+                                                <img src="image/OIP.jpg" alt="Ảnh bài viết nổi bật 1">
+                                            </a>
+                                        </div>
+
+                                        <div class="highlight-content">
+                                            <h3><a href="https://yody.vn/tai-che-ba-ca-phe"> Bật mí 10+ ý tưởng tái chế bã cà phê </a></h3>
+                                            <p>04/03/2023</p>
+                                            <!-- Thêm các thông tin khác như giá tiền, icon, vị trí, số điện thoại, vv. -->
+                                        </div>
+                                    </div>
+
+                                    <!-- Con moe thu 2-->
+                                    <div class="highlight-post">
+                                        <div class="highlight-image">
+                                            <a href="https://biopolymer.vn/thong-tin-san-pham/nhua-sinh-hoc-ca-phe-giai-phap-cho-tuong-lai-xanh-ben-vung/#:~:text=H%E1%BA%A1t%20nh%E1%BB%B1a%20sinh%20h%E1%BB%8Dc%20c%C3%A0%20ph%C3%AA%20l%C3%A0%20g%C3%AC%3F,tr%C6%B0%E1%BB%9Dng%2C%20an%20to%C3%A0n%20v%E1%BB%9Bi%20s%E1%BB%A9c%20kh%E1%BB%8Fe%20con%20ng%C6%B0%E1%BB%9Di.">
+                                                <img src="image/hnsh.jpg" alt="Ảnh bài viết nổi bật 2">
+                                            </a>
+                                        </div>
+                                        <div class="highlight-content">
+                                            <h3><a href="https://biopolymer.vn/thong-tin-san-pham/nhua-sinh-hoc-ca-phe-giai-phap-cho-tuong-lai-xanh-ben-vung/#:~:text=H%E1%BA%A1t%20nh%E1%BB%B1a%20sinh%20h%E1%BB%8Dc%20c%C3%A0%20ph%C3%AA%20l%C3%A0%20g%C3%AC%3F,tr%C6%B0%E1%BB%9Dng%2C%20an%20to%C3%A0n%20v%E1%BB%9Bi%20s%E1%BB%A9c%20kh%E1%BB%8Fe%20con%20ng%C6%B0%E1%BB%9Di.">Hạt nhựa sinh học Coffee Bio - composite </a></h3>
+                                            <p>22/04/2021</p>
+                                            <!-- Thêm các thông tin khác như giá tiền, icon, vị trí, số điện thoại, vv. -->
+                                        </div>
+                                    </div>
+
+
+                                    <!-- Con moe thu 3-->
+                                    <div class="highlight-post">
+                                        <div class="highlight-image">
+                                            <a href="https://biopolymer.vn/tin-tuc-su-kien/giai-phap-giam-o-nhiem-rac-thai-nhua-tu-ba-ca-phe/">
+                                                <img src="image/nhua.jpg" alt="Ảnh bài viết nổi bật 3">
+                                            </a>
+                                        </div>
+                                        <div class="highlight-content">
+                                            <h3><a href="https://biopolymer.vn/tin-tuc-su-kien/giai-phap-giam-o-nhiem-rac-thai-nhua-tu-ba-ca-phe/"> Giảm ô nhiễm rác thải nhựa </a></h3>
+                                            <p>27/04/2023</p>
+                                            <!-- Thêm các thông tin khác như giá tiền, icon, vị trí, số điện thoại, vv. -->
+                                        </div>
+                                    </div>
+
+                                    <!-- Con moe thu 4-->
+                                    <div class="highlight-post">
+                                        <div class="highlight-image">
+                                            <a href="https://tietkiemnangluong.com.vn/tin-tuc/khoa-hoc-cong-nghe/t16252/nguon-nang-luong-trien-vong-tu-ba-ca-phe.html">
+                                                <img src="image/demo.jpg" alt="Ảnh bài viết nổi bật 4">
+                                            </a>
+                                        </div>
+                                        <div class="highlight-content">
+                                            <h3><a href="https://tietkiemnangluong.com.vn/tin-tuc/khoa-hoc-cong-nghe/t16252/nguon-nang-luong-trien-vong-tu-ba-ca-phe.html">Nguồn năng lượng triển vọng từ bã cà phê</a></h3>
+                                            <p>01/09/2023</p>
+                                            <!-- Thêm các thông tin khác như giá tiền, icon, vị trí, số điện thoại, vv. -->
+                                        </div>
+                                    </div>
+                                    <!-- Thêm các bài viết nổi bật khác nếu cần -->
+                                
+                            </div>
+                            <a href="map/index.html" target="_blank" class="fixed-button"></a>
+                    </div>
+                </div>
+                   
+    </div>
+</div>
+
+        <script>
+            const seeMoreButton = document.querySelector('.see-more-button');
+            const locations = document.querySelectorAll('.locations li.hide');
+    
+            seeMoreButton.addEventListener('click', () => {
+                locations.forEach(location => {
+                    location.classList.toggle('hide');
+                });
+                const spanIcon = seeMoreButton.querySelector('span');
+                spanIcon.textContent = spanIcon.textContent === '+' ? '-' : '+';
+                seeMoreButton.classList.toggle('expanded');
+            });
+
+            function redirectToPaymentPage() {
+                window.location.href = "thanhtoan/thanhtoan.html";
+            }
+        </script>
+</body>
+</html>
+
+
+
+
+
+
+
+        
+ 
