@@ -28,6 +28,12 @@ ClassicEditor
             tasklist.appendChild(li);
             updateTaskCount();
         
+            // xóa 
+            let deleteButton = document.createElement('span');
+            deleteButton.innerHTML = "\uD83D\uDDD1";
+            li.insertBefore(deleteButton, li.firstChild);
+            deleteButton.classList.add("deleteButton");
+
         editor.setData("");
         saveData();
       }
@@ -42,6 +48,14 @@ ClassicEditor
           updateCompletedTaskCount();
           saveData();
       } 
+
+      else if ( event.target.classList.contains('deleteButton')) {
+        event.target.parentElement.remove(); 
+        updateTaskCount();
+        updateCompletedTaskCount();
+        saveData();
+    }
+    
   }) 
 
   new Sortable(tasklist, {

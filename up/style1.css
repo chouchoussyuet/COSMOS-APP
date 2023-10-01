@@ -126,4 +126,9 @@
     padding-top : 130px;
   }
 
-  
+  p{
+    font-weight: bold;
+    font-size : 18px;
+    color: rgb(117, 107, 107);
+    font-style : italic;
+  }
