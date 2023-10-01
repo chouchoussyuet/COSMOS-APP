@@ -242,13 +242,6 @@ margin-right: 5px; /* Khoảng cách giữa biểu tượng và nội dung */
 
 /* CSS cho phần bên phải "Nổi bật" */
 .highlight {
-    position: fixed;
-    top: 100px;
-    /* Khoảng cách từ trên xuống */
-    right: 20px;
-    /* Khoảng cách từ phải sang */
-    width: 300px;
-    /* Độ rộng của phần "Nổi bật" */
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
